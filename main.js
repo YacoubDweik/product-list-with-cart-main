@@ -242,7 +242,7 @@ function getData(method, url) {
             </div>`;
         dessertsList.appendChild(dessertCard);
       });
-      let app = document.body;
+      let app = document.querySelector(".container");
       app.addEventListener("click", (e) => {
         let dessertCard = e.target.closest(".dessert__card");
         let cartBox = e.target.closest(".cart__box");
