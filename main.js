@@ -221,7 +221,7 @@ function getData(method, url) {
               <picture>
                 <source media="(min-width: 992px)" srcset=${dessert.image["desktop"]} />
                 <source media="(min-width: 768px)" srcset=${dessert.image["tablet"]} />
-                <img src=${dessert.image["mobile"]} alt=${dessert.name} />
+                <img src=${dessert.image["mobile"]} alt="${dessert.name}" />
               </picture>
               <div class="btns">
                 <button class="add-btn active">
