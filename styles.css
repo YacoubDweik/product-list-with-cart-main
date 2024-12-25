@@ -409,9 +409,14 @@ body.inactive::after {
     width: min(90%, 1216px);
     flex-direction: row;
     align-items: flex-start;
+    min-height: 1361px;
+    padding: 88px 0;
   }
   .container__desserts {
     width: 70%;
+  }
+  .desserts__title {
+    font-size: 38px;
   }
   .container__cart {
     width: 30%;
