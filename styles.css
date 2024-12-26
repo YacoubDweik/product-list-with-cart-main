@@ -332,7 +332,8 @@ body.inactive::after {
   transition: 0.3s;
 }
 
-.confirm-order:hover {
+.confirm-order:hover,
+.new-order:hover {
   filter: brightness(0.75);
 }
 
