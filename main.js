@@ -186,6 +186,7 @@ class Cart {
   }
 
   resetCart() {
+    this.dessertsArray.forEach((dessert) => (dessert.quantity = 1));
     this.cartArray.forEach((item) => {
       item.quantity = 0;
       this.updateCart(item);
@@ -194,7 +195,7 @@ class Cart {
     this.totalPrice = 0;
     confirmList.innerHTML = "";
     confirmTotalPrice.innerHTML = `$${this.totalPrice.toFixed(2)}`;
-    localStorage["cart"] = "";
+    localStorage.removeItem("cart");
   }
 }
 
